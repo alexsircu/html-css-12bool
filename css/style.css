@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: pink;
+  line-height: 200px;
+}
+
+[class*="col-"] {
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#last-row-left [class*="col-"] {
+  height: calc(200px - 12px);
+  border: 1px solid white;
+  background: #F07F80;
+}
+
+#last-row-left {
+  padding: 5px;
+}
+
+#last-row-right [class*="col-"] {
+  height: calc(200px - 12px);
+  border: 1px solid white;
+  background: #F07F80;
+}
+
+#last-row-right {
+  padding: 5px;
+}
